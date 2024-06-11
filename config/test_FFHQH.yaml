@@ -3,13 +3,13 @@ enc_sizes: [3, 16, 64, 128, 256, 512, 1024]
 init_weights: [0.5, 0.5]
 init_value: 0.8
 skips: True
-device: 'cpu'
+device: "cpu"
 world_size: 1
 checkpoint:
-  harmonizer: "checkpoints/ffhqh512.pth"  # put the path to the downloaded checkpoint
+  harmonizer: "checkpoints/best_ffhqh256.pth" # put the path to the downloaded checkpoint
 input:
-  image_size: 512  # change image size in case of different resolution checkpoints usage usage
-  composite_path: assets/comp_00609.png
-  mask_path: assets/mask_00609.png
+  image_size: 512 # change image size in case of different resolution checkpoints usage usage
+  composite_path: assets/comp_dog.png
+  mask_path: assets/mask_dog.png
 output:
   path: outputs/
